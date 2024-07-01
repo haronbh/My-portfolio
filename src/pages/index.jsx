@@ -27,7 +27,7 @@ function Home() {
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
-              Hello! i&apos;m farouk.
+              Hello! i&apos;m Haroun.
             </h1>
             <p className="text-md font-light text-gray-300">
               A front-end web developer with a unique background in
