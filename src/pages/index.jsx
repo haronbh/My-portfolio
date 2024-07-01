@@ -27,7 +27,7 @@ function Home() {
           {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
-              Hello! i&apos;m farouk.
+              Hello! i&apos;m haroun.
             </h1>
             <p className="text-md font-light text-gray-300">
               With a strong foundation in Computer Science, I excel in software engineering and web development. I bring hands-on experience in multi-project development, with expertise in Java, SQL, and JavaScript frameworks. Known for attention to detail and a commitment to high-quality solutions, I thrive in dynamic, innovative environments.
