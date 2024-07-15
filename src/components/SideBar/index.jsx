@@ -44,16 +44,6 @@ function SideBar() {
               Available for Work
             </span>
           </div>
-          <figure>
-            <Image
-              src="/images/logo-1.svg"
-              alt="logo"
-              height={500}
-              width={500}
-              priority
-              className="w-full h-16 object-cover"
-            />
-          </figure>
         </div>
         <div className="flex flex-col gap-2">
           <Link
