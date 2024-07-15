@@ -1,7 +1,7 @@
 import InfoCard from "@/components/Cards/InfoCard"
 import { LiaBrainSolid } from "react-icons/lia"
 import { TbListDetails } from "react-icons/tb"
-import { LuUsers2 } from "react-icons/lu"
+import { LuUsers2, LuHeadphones } from "react-icons/lu"
 import Stacks from "@/components/Cards/Stacks"
 import Link from "next/link"
 import ProjectCard from "@/components/Cards/ProjectCard"
