@@ -30,7 +30,7 @@ function Home() {
               Hello! i&apos;m haroun.
             </h1>
             <p className="text-md font-light text-gray-300">
-              With a strong foundation in Computer Science, I excel in software engineering and web development. I bring hands-on experience in multi-project development, with expertise in Java, SQL, and JavaScript frameworks. Known for attention to detail and a commitment to high-quality solutions, I thrive in dynamic, innovative environments.
+              With a strong foundation in Computer Science, I excel in software engineering and web development. I bring hands-on experience in multi-project development, with expertise in Java, SQL, and JavaScript frameworks. Known for attention to detail and a commitment to high-quality solutions, I am passionate about tackling complex challenges and leveraging emerging technologies.
             </p>
             <Link
               className="btn btn-sm lg:w-36 w-full my-2 border border-opacity-0 rounded-3xl self-start hover:border-opacity-0 bg-green-700 text-gray-100 hover:bg-blue-600"
