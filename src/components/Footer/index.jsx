@@ -6,7 +6,7 @@ function Footer() {
       <aside>
         <p className="font-light">
           Copyright © 2024 - All right reserved by{" "}
-          <span className="text-green-400">Farouk Zemmouri</span>
+          <span className="text-green-400">Haroun Bouhroude</span>
         </p>
       </aside>
     </footer>
