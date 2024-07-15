@@ -104,8 +104,8 @@ function SideBar() {
             />
           </figure>
           <div className="flex flex-col text-center">
-            <p className="text-md text-white">Farouk Zemmouri</p>
-            <p className="text-xs font-light">Front-End Web Developer</p>
+            <p className="text-md text-white">Haroun Bouhroude</p>
+            <p className="text-xs font-light">Software Developer</p>
           </div>
         </div>
       </div>
