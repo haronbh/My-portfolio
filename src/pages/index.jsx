@@ -129,6 +129,25 @@ function Home() {
                   }
                 />
               </motion.div>
+              <motion.div
+                className="col-span-4"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                  delay: 0.4,
+                  type: "spring",
+                }}
+              >
+                <InfoCard
+                  title={"Team Player & Fast Learner"}
+                  icon={<LuCustomerSupport />}
+                  description={
+                    "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers."
+                  }
+                />
+              </motion.div>
             </div>
           </motion.div>
           {/* Stack */}
