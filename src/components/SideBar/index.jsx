@@ -93,16 +93,6 @@ function SideBar() {
           </Link>
         </div>
         <div className="flex lg:flex-col gap-2 items-center py-10">
-          <figure className="w-16 h-16">
-            <Image
-              src="/images/avatar.jpg"
-              alt=""
-              priority
-              height={500}
-              width={500}
-              className="w-full h-full object-cover rounded-full"
-            />
-          </figure>
           <div className="flex flex-col text-center">
             <p className="text-md text-white">Haroun Bouhroude</p>
             <p className="text-xs font-light">Software Developer</p>
