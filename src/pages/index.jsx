@@ -141,10 +141,10 @@ function Home() {
                 }}
               >
                 <InfoCard
-                  title={"Team Player & Fast Learner"}
+                  title={"Customer Focus"}
                   icon={<LuCustomerSupport />}
                   description={
-                    "In the dynamic world of web development, collaboration is key. I thrive in team environments, fostering open communication and working seamlessly with designers and fellow developers."
+                    "Deliver exceptional value by prioritizing user needs and providing attentive, personalized service to each client."
                   }
                 />
               </motion.div>
