@@ -142,7 +142,7 @@ function Home() {
               >
                 <InfoCard
                   title={"Customer Focus"}
-                  icon={<LuCustomerSupport />}
+                  icon={<LuHeadphones />}
                   description={
                     "Deliver exceptional value by prioritizing user needs and providing attentive, personalized service to each client."
                   }
