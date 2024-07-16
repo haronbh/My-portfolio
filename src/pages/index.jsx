@@ -276,7 +276,6 @@ function Home() {
                 />
               </motion.div>
             </div>
-          </motion.div>
         </div>
         {/* Projects Section */}
         <motion.div
@@ -363,7 +362,6 @@ function Home() {
           </h1>
           <Slider />
         </motion.div>
-      </div>
     </section>
   )
 }
