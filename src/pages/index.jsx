@@ -196,7 +196,7 @@ function Home() {
                   type: "spring",
                 }}
               >
-                <Stacks technology={"NEXT.JSs"} image={"/images/nextjs.png"} />
+                <Stacks technology={"JAVA"} image={"/images/java.png"} />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 70 }}
@@ -209,8 +209,8 @@ function Home() {
                 }}
               >
                 <Stacks
-                  technology={"JAVASCRIPT"}
-                  image={"/images/javascript.png"}
+                  technology={"Flutter"}
+                  image={"/images/flutter.png"}
                 />
               </motion.div>
               <motion.div
@@ -224,8 +224,8 @@ function Home() {
                 }}
               >
                 <Stacks
-                  technology={"TAILWIND"}
-                  image={"/images/tailwind.png"}
+                  technology={"Wordpress"}
+                  image={"/images/wordpress.png"}
                 />
               </motion.div>
             </div>
