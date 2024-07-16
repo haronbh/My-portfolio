@@ -41,7 +41,7 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"HTML,CSS,JavaScript"}
+              title={"HTML,CSS,JS"}
               description={"Essential web technologies: HTML, CSS, and JavaScript."}
               imageUrl={"/images/htmlcssjs.PNG"}
             />
@@ -105,11 +105,59 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"Java"}
-              description={"Versatile programming language."}
-              imageUrl={"/images/java.png"}
+              title={"SQL,SQLite"}
+              description={"Language for managing and querying relational databases."}
+              imageUrl={"/images/sql.png"}
             />
           </motion.div>
+            <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeInOut",
+              delay: 0.6,
+              type: "spring",
+            }}
+          >
+            <StackCard
+              title={"C,C++"}
+              description={"Mastered for high-performance and system-level programming."}
+              imageUrl={"/images/cc.png"}
+            />
+          </motion.div>
+                  <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeInOut",
+              delay: 0.6,
+              type: "spring",
+            }}
+          >
+            <StackCard
+              title={"Flutter"}
+              description={"Developing cross-platform mobile applications with a focus on elegant UI/UX and robust functionality."}
+              imageUrl={"/images/flutter.png"}
+            />
+          </motion.div>
+                  <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeInOut",
+              delay: 0.6,
+              type: "spring",
+            }}
+          >
+            <StackCard
+              title={"Matlab"}
+              description={"Proficient in MATLAB for mathematical computation and algorithm development."}
+              imageUrl={"/images/matlab.png"}
+            />
+          </motion.div>    
         </motion.div>
       </motion.div>
 
