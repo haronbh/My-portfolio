@@ -40,9 +40,25 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"HTML"}
-              description={"Markup language for web documents."}
-              imageUrl={"/images/html.png"}
+              title={"HTML,CSS,JavaScript"}
+              description={"Essential web technologies: HTML, CSS, and JavaScript."}
+              imageUrl={"/images/htmlcssjs.PNG"}
+            />
+          </motion.div>
+                    <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeInOut",
+              delay: 0.7,
+              type: "spring",
+            }}
+          >
+            <StackCard
+              title={"XML,DTD,XSD,XPATH"}
+              description={"Essential for defining, validating, and querying structured data in XML files."}
+              imageUrl={"/images/xml.png"}
             />
           </motion.div>
           <motion.div
@@ -56,9 +72,9 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"CSS"}
-              description={"Styling language for web design."}
-              imageUrl={"/images/css.png"}
+              title={"JAVA"}
+              description={"Java GUI development with OOP principles."}
+              imageUrl={"/images/java.png"}
             />
           </motion.div>
           <motion.div
@@ -72,24 +88,8 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"JavaScript"}
-              description={"Dynamic scripting for web interactivity."}
-              imageUrl={"/images/javascript.png"}
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.8, 1], x: 0 }}
-            transition={{
-              duration: 0.7,
-              ease: "easeInOut",
-              delay: 0.7,
-              type: "spring",
-            }}
-          >
-            <StackCard
               title={"Python"}
-              description={"High-level programming language."}
+              description={"Python scripting for versatile applications."}
               imageUrl={"/images/python.png"}
             />
           </motion.div>
