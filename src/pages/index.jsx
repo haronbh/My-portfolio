@@ -1,13 +1,13 @@
-import InfoCard from "@/components/Cards/InfoCard"
-import { LiaBrainSolid } from "react-icons/lia"
-import { TbListDetails } from "react-icons/tb"
-import { LuUsers2, LuHeadphones } from "react-icons/lu"
-import Stacks from "@/components/Cards/Stacks"
-import Link from "next/link"
-import ProjectCard from "@/components/Cards/ProjectCard"
-import Image from "next/image"
-import Slider from "@/components/Swiper"
-import { motion } from "framer-motion"
+import InfoCard from "@/components/Cards/InfoCard";
+import { LiaBrainSolid } from "react-icons/lia";
+import { TbListDetails } from "react-icons/tb";
+import { LuUsers2, LuHeadphones } from "react-icons/lu";
+import Stacks from "@/components/Cards/Stacks";
+import Link from "next/link";
+import ProjectCard from "@/components/Cards/ProjectCard";
+import Image from "next/image";
+import Slider from "@/components/Swiper";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
@@ -71,7 +71,7 @@ function Home() {
             <h1 className="pl-2 py-3 text-2xl uppercase font-bold text-white">
               About
             </h1>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <motion.div
                 className="lg:col-span-2 col-span-4"
                 initial={{ opacity: 0, x: 50 }}
@@ -243,8 +243,6 @@ function Home() {
                   image={"/images/sql.png"}
                 />
               </motion.div>
-            </div>
-          </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
@@ -260,7 +258,7 @@ function Home() {
                   image={"/images/nodejs.png"}
                 />
               </motion.div>
-                <motion.div
+              <motion.div
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
                 transition={{
@@ -276,6 +274,7 @@ function Home() {
                 />
               </motion.div>
             </div>
+          </motion.div>
         </div>
         {/* Projects Section */}
         <motion.div
@@ -362,8 +361,9 @@ function Home() {
           </h1>
           <Slider />
         </motion.div>
+      </div>
     </section>
-  )
+  );
 }
 
-export default Home
+export default Home;
