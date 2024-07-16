@@ -184,7 +184,7 @@ function Home() {
                   type: "spring",
                 }}
               >
-                <Stacks technology={"Html/Css/JavaScript"} image={"/images/react.png"} />
+                <Stacks technology={"Html/Css/JavaScript"} image={"/images/htmlcssjs.png"} />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 70 }}
