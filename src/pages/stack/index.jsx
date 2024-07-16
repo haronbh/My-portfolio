@@ -209,8 +209,8 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"React.js"}
-              description={"JavaScript library for building interfaces."}
+              title={"Wordpress"}
+              description={"I have 5 years of experience in managing and developing WordPress sites."}
               imageUrl={"/images/react.png"}
             />
           </motion.div>
@@ -225,9 +225,9 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"Vue.js"}
-              description={"Progressive JavaScript framework."}
-              imageUrl={"/images/vue.png"}
+              title={"Server Management"}
+              description={"experience with cPanel, WHM, Plesk, Apache, data migration, and database management."}
+              imageUrl={"/images/server.jpg"}
             />
           </motion.div>
           <motion.div
@@ -241,9 +241,9 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"Angular"}
-              description={"Platform for building mobile and desktop web applications."}
-              imageUrl={"/images/angular.png"}
+              title={"Cordova"}
+              description={"Experienced in developing multi-plateform applications using Cordova."}
+              imageUrl={"/images/cordova.png"}
             />
           </motion.div>
           <motion.div
@@ -273,7 +273,7 @@ function StackPage() {
             }}
           >
             <StackCard
-              title={"TailwindCSS"}
+              title={"Node.js"}
               description={"Utility-first CSS framework for flexibility."}
               imageUrl={"/images/tailwind.png"}
             />
