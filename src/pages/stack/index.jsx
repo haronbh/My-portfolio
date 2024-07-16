@@ -142,6 +142,26 @@ function StackPage() {
               imageUrl={"/images/flutter.png"}
             />
           </motion.div>
+
+                    </motion.div>
+                  <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: "easeInOut",
+              delay: 0.6,
+              type: "spring",
+            }}
+          >
+            <StackCard
+              title={"PHP"}
+              description={"Skilled in PHP for creating dynamic and interactive web applications."}
+              imageUrl={"/images/php.png"}
+            />
+          </motion.div>
+
+        
                   <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
