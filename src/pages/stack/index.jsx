@@ -8,7 +8,7 @@ function StackPage() {
       <motion.div className="flex flex-col gap-6 min-h-fit mb-6">
         {/* Programming Languages Header */}
 <motion.div
-  className="h-80 bg-dark-200 rounded-3xl p-6 border-2 border-gray-800"
+  className="h-80 bg-dark-200 rounded-3xl p-6 border-2 border-gray-800 w-3/5"
   initial={{ opacity: 0, x: 50 }}
   animate={{ opacity: [0, 0.8, 1], x: 0 }}
   transition={{
@@ -19,7 +19,7 @@ function StackPage() {
   }}
 >
   <div className="h-full flex flex-col gap-3 w-full justify-end p-4">
-    <h1 className="md:text-2xl text-xl uppercase text-white font-bold">
+    <h1 className="md:text-3xl text-2xl uppercase text-white font-bold">
       Programming Languages
     </h1>
     <p className="text-md text-gray-200">
