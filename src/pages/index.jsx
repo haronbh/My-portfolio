@@ -196,7 +196,7 @@ function Home() {
                   type: "spring",
                 }}
               >
-                <Stacks technology={"NEXT.JS"} image={"/images/nextjs.png"} />
+                <Stacks technology={"NEXT.JSs"} image={"/images/nextjs.png"} />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 70 }}
