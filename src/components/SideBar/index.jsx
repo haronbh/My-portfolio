@@ -95,7 +95,7 @@ function SideBar() {
         <div className="flex lg:flex-col gap-2 items-center py-10">
           <div className="flex flex-col text-center">
             <p className="text-md text-white">Haroun Bouhroude</p>
-            <p className="text-xs font-light">Software Developer</p>
+            <p className="text-xs text-white">Software Developer</p>
           </div>
         </div>
       </div>
