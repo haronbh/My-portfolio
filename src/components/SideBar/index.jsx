@@ -71,7 +71,7 @@ function SideBar() {
               activeLink === "Education" ? "text-green-400" : "text-white"
             }`}
           >
-            Education
+            Work & Education
           </Link>
           <Link
             href={"/stack"}
