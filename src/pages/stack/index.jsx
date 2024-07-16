@@ -211,7 +211,7 @@ function StackPage() {
             <StackCard
               title={"Wordpress"}
               description={"I have 5 years of experience in managing and developing WordPress sites."}
-              imageUrl={"/images/react.png"}
+              imageUrl={"/images/wordpress.png"}
             />
           </motion.div>
           <motion.div
@@ -275,7 +275,7 @@ function StackPage() {
             <StackCard
               title={"Node.js"}
               description={"Utility-first CSS framework for flexibility."}
-              imageUrl={"/images/tailwind.png"}
+              imageUrl={"/images/nodejs.png"}
             />
           </motion.div>
         </motion.div>
