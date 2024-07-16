@@ -275,7 +275,6 @@ function Home() {
                   image={"/images/bootstrap.png"}
                 />
               </motion.div>
-            </div>
           </motion.div>
         </div>
         {/* Projects Section */}
