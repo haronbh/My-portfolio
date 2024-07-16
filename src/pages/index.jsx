@@ -1,20 +1,18 @@
-// Import statements
-import InfoCard from "@/components/Cards/InfoCard";
-import { LiaBrainSolid } from "react-icons/lia";
-import { TbListDetails } from "react-icons/tb";
-import { LuUsers2, LuHeadphones } from "react-icons/lu";
-import Stacks from "@/components/Cards/Stacks";
-import Link from "next/link";
-import ProjectCard from "@/components/Cards/ProjectCard";
-import Image from "next/image";
-import Slider from "@/components/Swiper";
-import { motion } from "framer-motion";
+import InfoCard from "@/components/Cards/InfoCard"
+import { LiaBrainSolid } from "react-icons/lia"
+import { TbListDetails } from "react-icons/tb"
+import { LuUsers2, LuHeadphones } from "react-icons/lu"
+import Stacks from "@/components/Cards/Stacks"
+import Link from "next/link"
+import ProjectCard from "@/components/Cards/ProjectCard"
+import Image from "next/image"
+import Slider from "@/components/Swiper"
+import { motion } from "framer-motion"
 
 function Home() {
   return (
     <section className="min-h-screen">
       <div className="flex flex-col min-h-fit w-full gap-4">
-        {/* First Section (Header) */}
         <motion.div
           className="min-h-fit bg-dark-200 shadow-sm rounded-3xl flex items-start justify-center lg:justify-start lg:items-center lg:flex-row flex-col gap-8 p-8"
           initial={{ opacity: 0, x: 50 }}
@@ -26,7 +24,7 @@ function Home() {
             type: "spring",
           }}
         >
-          {/* Header content */}
+          {/* Header */}
           <div className="lg:w-2/3 flex flex-col gap-4 w-full">
             <h1 className="text-3xl uppercase font-bold text-white mb-2">
               Hello! i&apos;m haroun.
@@ -56,10 +54,9 @@ function Home() {
             />
           </figure>
         </motion.div>
-
-        {/* Second Section (About and Stack) */}
+        {/* Second Section */}
         <div className="flex xl:flex-row flex-col w-full min-h-fit gap-5">
-          {/* About section */}
+          {/* About */}
           <motion.div
             className="flex flex-col xl:w-[60%] w-full min-h-fit"
             initial={{ opacity: 0, x: 30 }}
@@ -153,8 +150,7 @@ function Home() {
               </motion.div>
             </div>
           </motion.div>
-
-          {/* Stack section */}
+          {/* Stack */}
           <motion.div
             className="flex flex-col xl:w-[40%] w-full"
             initial={{ opacity: 0, x: 50 }}
@@ -243,10 +239,12 @@ function Home() {
                 }}
               >
                 <Stacks
-                  technology={"Python"}
-                  image={"/images/python.png"}
+                  technology={"SQL"}
+                  image={"/images/sql.png"}
                 />
               </motion.div>
+            </div>
+          </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 70 }}
                 animate={{ opacity: [0, 0.7, 1], x: 0 }}
@@ -258,14 +256,28 @@ function Home() {
                 }}
               >
                 <Stacks
-                  technology={"Ios/android"}
-                  image={"/images/ios.png"}
+                  technology={"Node.js"}
+                  image={"/images/nodejs.png"}
+                />
+              </motion.div>
+                <motion.div
+                initial={{ opacity: 0, x: 70 }}
+                animate={{ opacity: [0, 0.7, 1], x: 0 }}
+                transition={{
+                  duration: 0.3,
+                  ease: "easeInOut",
+                  delay: 0.6,
+                  type: "spring",
+                }}
+              >
+                <Stacks
+                  technology={"BOOTSTRAP"}
+                  image={"/images/bootstrap.png"}
                 />
               </motion.div>
             </div>
           </motion.div>
         </div>
-
         {/* Projects Section */}
         <motion.div
           className="w-full min-h-fit mb-8"
@@ -278,13 +290,63 @@ function Home() {
             type: "spring",
           }}
         >
-          <h1 className="pl-2 py-3 text-2xl w-full uppercase font-bold text-white">
-            Projects
-          </h1>
-          <Slider />
+          <div className="flex items-center justify-between w-full min-h-fit">
+            <h1 className="pl-2 py-3 text-2xl uppercase text-white font-bold mb-2 lg:mt-0 mt-2">
+              Recent Projects
+            </h1>
+            <Link
+              className="btn btn-sm rounded-2xl bg-green-700 border border-opacity-0 hover:border-opacity-0 text-gray-100 hover:bg-blue-600 w-28 lg:w-24"
+              href={"/projects"}
+            >
+              View All
+            </Link>
+          </div>
+          <div className="flex flex-col lg:flex-row w-full min-h-fit gap-5">
+            <Link
+              href={"/projects/unify"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Unify"}
+                imageUrl={"/images/unify.png"}
+                websiteType={"Community Sharing"}
+                tech_1={"Next.js"}
+                tech_2={"TailwindCSS"}
+                tech_3={"Firebase"}
+              />
+            </Link>
+            <Link
+              href={"/projects/reelio"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Reelio"}
+                imageUrl={"/images/reelio-1.png"}
+                websiteType={"Movie Platform"}
+                tech_1={"Next.js"}
+                tech_2={"TailwindCSS"}
+                tech_3={"IMdb.API"}
+              />
+            </Link>
+            <Link
+              href={"/projects/neon"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Neon City"}
+                imageUrl={"/images/neoncity.png"}
+                websiteType={"Mini Game"}
+                tech_1={"HTML"}
+                tech_2={"CSS"}
+                tech_3={"Vanilla JS"}
+              />
+            </Link>
+          </div>
         </motion.div>
-
-        {/* Testimonials Section */}
+        {/* Testimonials */}
         <motion.div
           className="min-h-fit w-full"
           initial={{ opacity: 0, x: 50 }}
@@ -296,69 +358,14 @@ function Home() {
             type: "spring",
           }}
         >
-          <h1 className="pl-2 py-3 text-2xl w-full uppercase font-bold text-white">
+          <h1 className="text-2xl text-white font-bold uppercase pl-2 py-3 mb-2">
             Testimonials
           </h1>
-          <div className="flex gap-8 p-8">
-            <motion.div
-              initial={{ opacity: 0, x: 70 }}
-              animate={{ opacity: [0, 0.7, 1], x: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeInOut",
-                delay: 0.3,
-                type: "spring",
-              }}
-            >
-              <h1 className="text-3xl uppercase font-bold text-white mb-2">
-                Client 1
-              </h1>
-              <p className="text-md font-light text-gray-300">
-                "Thanks to haroun's expertise, we were able to achieve our
-                goals efficiently and effectively."
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 70 }}
-              animate={{ opacity: [0, 0.7, 1], x: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeInOut",
-                delay: 0.4,
-                type: "spring",
-              }}
-            >
-              <h1 className="text-3xl uppercase font-bold text-white mb-2">
-                Client 2
-              </h1>
-              <p className="text-md font-light text-gray-300">
-                "haroun's professionalism and dedication to excellence are
-                unmatched."
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 70 }}
-              animate={{ opacity: [0, 0.7, 1], x: 0 }}
-              transition={{
-                duration: 0.3,
-                ease: "easeInOut",
-                delay: 0.5,
-                type: "spring",
-              }}
-            >
-              <h1 className="text-3xl uppercase font-bold text-white mb-2">
-                Client 3
-              </h1>
-              <p className="text-md font-light text-gray-300">
-                "haroun's commitment to delivering exceptional results is
-                commendable."
-              </p>
-            </motion.div>
-          </div>
+          <Slider />
         </motion.div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Home;
+export default Home
