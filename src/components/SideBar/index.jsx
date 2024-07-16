@@ -66,7 +66,7 @@ function SideBar() {
           </Link>
           <Link
             href={"/education"}
-            onClick={() => handleLinkClick("Education")}
+            onClick={() => handleLinkClick("Work & Education")}
             className={`text-3xl uppercase font-bold hover:scale-110 transition duration-500 ${
               activeLink === "Education" ? "text-green-400" : "text-white"
             }`}
