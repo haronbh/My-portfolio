@@ -181,7 +181,8 @@ function StackPage() {
         </motion.div>
       </motion.div>
 
-      {/* Frameworks Section */}
+          )
+          { /* Frameworks Section */}
       <motion.div className="flex flex-col gap-6 min-h-fit mb-6">
         {/* Frameworks Header */}
         <motion.div
@@ -288,8 +289,7 @@ function StackPage() {
           </motion.div>
         </motion.div>
       </motion.div>
-    </motion.div>
-  );
+  ;
 }
 
 export default StackPage;
