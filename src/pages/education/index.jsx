@@ -138,33 +138,7 @@ function EducationPage() {
                 </ul>
               </div>
             </motion.div>
-            <motion.div
-              className="w-full h-full p-6 bg-dark-200 rounded-3xl"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: [0, 0.8, 1], x: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: "easeInOut",
-                delay: 0.6,
-                type: "spring",
-              }}
-            >
-              <h1 className="md:text-3xl text-2xl font-bold uppercase text-white p-4 mb-2">
-                Certifications
-              </h1>
-              <div className="w-full min-h-fit p-4">
-                <a
-                  href="https://www.credential.net/fcaf13d7-eb4c-4b68-bbf5-48deb48dd14e#gs.5zc6jz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-105 transition duration-500 cursor-pointer"
-                >
-                  <li className="text-md text-gray-200 font-light hover:text-blue-600">
-                    Front-End Web Development Certificate
-                  </li>
-                </a>
-              </div>
-            </motion.div>
+            
           </div>
         </div>
       </div>
