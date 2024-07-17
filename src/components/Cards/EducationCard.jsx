@@ -5,6 +5,8 @@ function EducationCard({
   organization,
   description_1,
   description_2,
+  description_3,
+
 }) {
   return (
     <div className="w-full min-h-fit p-4 bg-dark-200 rounded-3xl">
