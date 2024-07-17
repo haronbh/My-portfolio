@@ -8,7 +8,7 @@ function EducationCard({
   description_1,
   description_2,
   description_3,
-  description_3,
+  description_4,
 }) {
   return (
     <div className="w-full min-h-fit p-4 bg-dark-200 rounded-3xl">
