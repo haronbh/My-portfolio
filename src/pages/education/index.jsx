@@ -71,12 +71,12 @@ function EducationPage() {
                   "Provided comprehensive technical support services to clients at a cyber café."
                 }
                 description_2={
-                  "Diagnosed and resolved a wide range of software issues on clients' devices, including troubleshooting operating system errors, application crashes, and connectivity problems."
+                  "Diagnosed and resolved a wide range of software & some hardware issues on clients' devices, including troubleshooting operating system errors, application crashes, and connectivity problems."
                 }
                 description_3={
-                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel for client communication and administrative purposes."
+                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel ...etc for client communication, administrative and more purposes."
                 }
-                year={"2020 - 2022"}
+                year={"2018 - 2022"}
               />
             </motion.div>
             <motion.div
@@ -90,11 +90,10 @@ function EducationPage() {
               }}
             >
               <EducationCard
-                title={"Bachelor of Sciences (BSc)"}
-                occupation={"Plant Disease / Agronomy"}
-                organization={"University of Yahia Fares"}
+                title={"Freelance Web Developer & Webmaster"}
+                organization={"Freelance/Remote"}
                 description_1={
-                  "Participated in academic projects focused on identifying and mitigating common plant diseases, pests, and weeds affecting agricultural crops."
+                  "As a webmaster, I managed and developed multiple WordPress sites, ensuring they were optimized for performance and user experience. Utilizing the best themes and plugins, I tailored each site to meet specific needs. My responsibilities included regular updates, troubleshooting issues, content creation & updates and content writers team leading. I also handled data migration."
                 }
                 description_2={
                   "Collaborated with peers on group projects, honing teamwork and communication skills while developing solutions for real-world plant protection challenges."
