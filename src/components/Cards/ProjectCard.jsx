@@ -22,7 +22,7 @@ function ProjectCard({
           width={200}
           height={200}
           placeholder="blur"
-          blurDataURL="public/images/alibabalite.png"
+          blurDataURL="public/images/blur.jpg"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover object-center w-full h-full duration-500"
         />
