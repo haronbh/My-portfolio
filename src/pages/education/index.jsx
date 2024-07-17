@@ -20,7 +20,7 @@ function EducationPage() {
         >
           <div className="flex flex-col h-full gap-3 w-full lg:w-[70%] justify-end">
             <h1 className="text-4xl uppercase font-bold text-white">
-              Education
+              Work & Education
             </h1>
             <p className="text-md text-gray-300 font-light">
               This section highlights not only my academic
@@ -43,15 +43,15 @@ function EducationPage() {
               }}
             >
               <EducationCard
-                title={"Front-End Web Development Bootcamp"}
-                organization={"Re:Coded"}
+                title={"Bachelor's Degree in Computer Science specializing in Information Systems"}
+                organization={"University of Béjaia"}
                 description_1={
-                  "Completed over 500 hours of intensive, project-based learning, showcasing proficiency in front-end development and best practices in collaborative coding."
+                  "Throughout my Bachelor's Degree in Computer Science specializing in Information Systems, I gained comprehensive knowledge in various domains including algorithms, data structures, database management, web development, operating systems, and computer networks. Additionally, I developed skills in programming languages such as Java, Python, C, and C++."
                 }
                 description_2={
-                  "Collaborated with different teams on four diverse projects, utilizing HTML, CSS frameworks like Tailwind, JavaScript, Firebase, API integration, , React, and Next.js, while maintaining version control through Git."
+                  "I also learned about software engineering principles, machine learning, artificial intelligence, mobile application development, system security, and data analysis. This diverse education equipped me with a robust foundation to tackle complex problems in the tech industry."
                 }
-                year={"06/2023 - 12/2023"}
+                year={"2021 - 2024"}
               />
             </motion.div>
             <motion.div
@@ -65,14 +65,16 @@ function EducationPage() {
               }}
             >
               <EducationCard
-                title={"Master of Sciences (MSc)"}
-                occupation={"Phytopathology / Agronomy"}
-                organization={"University of Yahia Fares"}
+                title={"Technical Support Specialist"}
+                organization={"Center «Espace Informatique» (Internet Cafe)"}
                 description_1={
-                  "Conducted research projects on identifying and characterizing plant pathogens using molecular techniques and advanced diagnostic methods."
+                  "Provided comprehensive technical support services to clients at a cyber café."
                 }
                 description_2={
-                  "Specialized in the study of plant diseases, their causes, and methods of control and management."
+                  "Diagnosed and resolved a wide range of software issues on clients' devices, including troubleshooting operating system errors, application crashes, and connectivity problems."
+                }
+                description_3={
+                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel for client communication and administrative purposes."
                 }
                 year={"2020 - 2022"}
               />
