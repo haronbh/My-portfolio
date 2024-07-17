@@ -19,6 +19,7 @@ function EducationCard({
         <ul className="w-full list-disc px-4 flex flex-col gap-2 font-light">
           <li className="text-md text-gray-200">{description_1}</li>
           <li className="text-md text-gray-200">{description_2}</li>
+          <li className="text-md text-gray-200">{description_3}</li>          
         </ul>
         <div className="px-4">
           <p className="text-sm">{year}</p>
