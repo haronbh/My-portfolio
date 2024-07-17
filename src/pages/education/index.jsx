@@ -23,8 +23,8 @@ function EducationPage() {
               Education
             </h1>
             <p className="text-md text-gray-300 font-light">
-              Thisssssssssssssssssssssssssssss comprehensive portfolio highlights not only my academic
-              achievements and certifications but also emphasizes the specific
+              This section highlights not only my academic
+              achievements and work experience but also emphasizes the specific
               soft skills cultivated throughout my educational journey,
               contributing to my effectiveness as a dynamic professional.
             </p>
