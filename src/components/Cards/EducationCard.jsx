@@ -8,6 +8,7 @@ function EducationCard({
   description_1,
   description_2,
   description_3,
+  description_3,
 }) {
   return (
     <div className="w-full min-h-fit p-4 bg-dark-200 rounded-3xl">
@@ -28,6 +29,9 @@ function EducationCard({
           )}
           {description_3 && (
             <li className="text-md text-gray-200">{description_3}</li>
+          )}
+         {description_4 && (
+            <li className="text-md text-gray-200">{description_4}</li>
           )}
         </ul>
         <div className="px-4">
