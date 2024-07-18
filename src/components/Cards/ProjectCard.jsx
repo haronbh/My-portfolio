@@ -11,7 +11,6 @@ function ProjectCard({
   tech_2,
   tech_3,
   githubUrl,
-  demoUrl,
 }) {
   return (
     <div className="card rounded-3xl group shadow-sm">
