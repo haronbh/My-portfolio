@@ -32,7 +32,7 @@ function DeviceInformationAppWithCordovaPage() {
           "To run the app locally:\n\n1. Clone this repository.\n2. Navigate to the project directory.\n3. Install dependencies with npm install.\n4. Add desired platforms with `cordova platform add <platform>` (e.g., `cordova platform add android`).",
           "Run the app on a simulator or connected device using `cordova run <platform>`.\nTest web version locally with `cordova run browser`."
         ]}
-        image_1={"/images/device-info-app.png"}
+        image_1={"/images/device-info.png"}
         resultDescription={
           "This Cordova-based mobile application successfully demonstrates the use of Cordova plugins to access and display essential device information. It provides a seamless user experience across multiple platforms including Android, iOS, and Web."
         }
