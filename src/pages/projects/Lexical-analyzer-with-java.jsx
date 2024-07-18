@@ -7,7 +7,7 @@ function LexicalAnalyzerPage() {
       <ProjectDetailsCard
         title={"Lexical Analyzer in Java"}
         websiteType={"Java Program"}
-        devPeriod={"2 Weeks"}
+        devPeriod={"1 day"}
         projectSummary={
           "This Java program functions as a lexical analyzer that validates a given string according to specific lexical rules. The program checks if the input string conforms to a pattern where it starts with two or more 'a' characters, followed by a single 'd', followed by zero or more 'b' characters, and ending with one or more 'c' characters. This is achieved using a series of string checks and validations."
         }
