@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { RiLinkUnlink } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 function ProjectDetailsCard({
@@ -41,14 +40,14 @@ function ProjectDetailsCard({
     featureTitle_2,
     featureTitle_3,
   ].filter(Boolean);
-  
+
   const combinedFeatureDescriptions = featureDescriptions || [
     featureDescription,
     featureDescription_1,
     featureDescription_2,
     featureDescription_3,
   ].filter(Boolean);
-  
+
   // Combine individual images into an array if an array is not provided
   const combinedImages = images || [
     image_1,
@@ -160,27 +159,26 @@ function ProjectDetailsCard({
         </div>
         <div className="flex flex-col gap-4 lg:gap-6 lg:w-[50%] w-full">
           {combinedImages.map((image, index) => (
-<motion.figure
-            className="relative h-full w-full"
-            key={index}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.8, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.5 + 0.1 * index,
-              type: "spring",
-            }}
-          >
-            {/* Ensure the Image component uses full width and height without cropping */}
-            <Image
-              src={image}
-              alt={`project-img-${index + 1}`}
-              layout="fill"
-              objectFit="contain"
-              className="w-full h-full object-cover rounded-3xl"
-            />
-          </motion.figure>
+            <motion.figure
+              className="relative h-full w-full"
+              key={index}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: [0, 0.8, 1], x: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.5 + 0.1 * index,
+                type: "spring",
+              }}
+            >
+              <Image
+                src={image}
+                alt={`project-img-${index + 1}`}
+                layout="fill"
+                objectFit="contain"
+                className="w-full h-full object-cover rounded-3xl"
+              />
+            </motion.figure>
           ))}
         </div>
       </div>
@@ -201,7 +199,7 @@ function ProjectDetailsCard({
         </div>
       </motion.div>
     </div>
-  )
+  );
 }
 
 export default ProjectDetailsCard;
