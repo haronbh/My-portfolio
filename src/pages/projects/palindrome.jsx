@@ -30,7 +30,7 @@ function PalindromeCheckerPage() {
         featureDescription_3={
           "Provided clear feedback to the user on whether the input word is a palindrome."
         }
-        image_1={"/images/next.png"} 
+        image_1={"/images/palindrome.jpg"} 
 
         resultDescription={
           "The Palindrome Checker project resulted in a functional C++ program that accurately identifies whether a word is a palindrome. It effectively demonstrates proficiency in string manipulation and logical operations in C++ programming."
