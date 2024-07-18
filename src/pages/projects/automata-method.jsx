@@ -7,7 +7,7 @@ function StringRecognizerPage() {
       <ProjectDetailsCard
         title={"Character String Recognizer"}
         websiteType={"JAVA Program"}
-        devPeriod={"2 Weeks"}
+        devPeriod={"1 day"}
         projectSummary={
           "This project involves writing a JAVA program that recognizes character strings using the automaton method. The program specifically handles the Lee language of character strings, which consists of a quote followed by a set of characters, and ends with a quote, with a maximum length of 10 characters."
         }
