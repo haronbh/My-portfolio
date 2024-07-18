@@ -40,17 +40,40 @@ function ProjectsPage() {
             }}
           >
             <Link
-              href={"/projects/unify"}
+              href={"/projects/automata-method"}
               rel="noopener noreferrer"
               target="_blank"
             >
               <ProjectCard
-                title={"Unify"}
-                imageUrl={"/images/unify.png"}
-                websiteType={"Community Sharing"}
+                title={"Automaton method compilation"}
+                imageUrl={"/images/automaton.PNG"}
+                websiteType={"Java code"}
+                tech_1={"JAVA"}
+              />
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.7, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.4,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/reelio"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Reelio"}
+                imageUrl={"/images/reelio-1.png"}
+                websiteType={"Movie Platform"}
                 tech_1={"Next.js"}
                 tech_2={"TailwindCSS"}
-                tech_3={"Firebase"}
+                tech_3={"IMdb.API"}
               />
             </Link>
           </motion.div>
