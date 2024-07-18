@@ -160,26 +160,27 @@ function ProjectDetailsCard({
         </div>
         <div className="flex flex-col gap-4 lg:gap-6 lg:w-[50%] w-full">
           {combinedImages.map((image, index) => (
-            <motion.figure
-              className="relative h-full w-full"
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: [0, 0.8, 1], x: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeInOut",
-                delay: 0.5 + 0.1 * index,
-                type: "spring",
-              }}
-              key={index}
-            >
-              <Image
-                src={image}
-                alt={`project-img-${index + 1}`}
-                height={600}
-                width={600}
-                className="w-full h-full object-cover rounded-3xl"
-              />
-            </motion.figure>
+<motion.figure
+            className="relative h-full w-full"
+            key={index}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.5 + 0.1 * index,
+              type: "spring",
+            }}
+          >
+            {/* Ensure the Image component uses full width and height without cropping */}
+            <Image
+              src={image}
+              alt={`project-img-${index + 1}`}
+              layout="fill"
+              objectFit="contain"
+              className="w-full h-full object-cover rounded-3xl"
+            />
+          </motion.figure>
           ))}
         </div>
       </div>
