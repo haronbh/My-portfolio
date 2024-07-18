@@ -7,7 +7,7 @@ function FSAIdentifierValidatorPage() {
       <ProjectDetailsCard
         title={"Finite State Automaton (FSA) Identifier Validator"}
         websiteType={"Java Program"}
-        devPeriod={"3 Weeks"}
+        devPeriod={"2 days"}
         projectSummary={
           "This Java program implements a finite state automaton (FSA) to validate whether a given string is a valid identifier based on specific rules. The identifier can start with a letter and can include letters, digits, and underscores. It cannot start with a digit or an underscore and cannot contain any other characters."
         }
