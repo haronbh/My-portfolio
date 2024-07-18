@@ -34,15 +34,21 @@ function ProjectCard({
         </span>
 
         <div className="flex items-center gap-1 p-0 w-full">
-          <span className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25">
-            {tech_1}
-          </span>
-          <span className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25">
-            {tech_2}
-          </span>
-          <span className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25">
-            {tech_3}
-          </span>
+          {tech_1 && (
+            <span className="badge badge-md font-light flex gap-1 text-white border-opacity-30 bg-black bg-opacity-25">
+              {tech_1}
+            </span>
+          )}
+          {tech_2 && (
+            <span className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25">
+              {tech_2}
+            </span>
+          )}
+          {tech_3 && (
+            <span className="badge badge-md font-light text-white border-white border-opacity-30 bg-black bg-opacity-25">
+              {tech_3}
+            </span>
+          )}
         </div>
       </div>
     </div>
