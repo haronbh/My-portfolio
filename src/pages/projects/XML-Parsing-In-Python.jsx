@@ -7,7 +7,7 @@ function XmlManagementWithPythonPage() {
       <ProjectDetailsCard
         title={"XML Management with Python"}
         websiteType={"Python Project"}
-        devPeriod={"3 Weeks"}
+        devPeriod={"4 days"}
         projectSummary={
           "This project demonstrates how to create, validate, and manage XML files using Python. It includes examples XML files, along with their corresponding DTD (Document Type Definition) and XSD (XML Schema Definition) files. The project also contains Python scripts to create an XML file & extract its content and to validate the XML file against its DTD and XSD."
         }
