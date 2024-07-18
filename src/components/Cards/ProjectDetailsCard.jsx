@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { FaGithub } from "react-icons/fa"
-import { RiLinkUnlink } from "react-icons/ri"
-import { motion } from "framer-motion"
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { RiLinkUnlink } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 function ProjectDetailsCard({
   title,
@@ -14,16 +14,55 @@ function ProjectDetailsCard({
   featureTitle_1,
   featureTitle_2,
   featureTitle_3,
+  featureTitles,
   image_1,
   image_2,
   image_3,
+  image_4,
+  image_5,
+  image_6,
+  image_7,
+  image_8,
+  image_9,
+  image_10,
+  images,
   resultDescription,
   featureDescription,
   featureDescription_1,
   featureDescription_2,
   featureDescription_3,
+  featureDescriptions,
   githubUrl,
 }) {
+  // Combine individual feature titles and descriptions into arrays if arrays are not provided
+  const combinedFeatureTitles = featureTitles || [
+    featureTitle,
+    featureTitle_1,
+    featureTitle_2,
+    featureTitle_3,
+  ].filter(Boolean);
+  
+  const combinedFeatureDescriptions = featureDescriptions || [
+    featureDescription,
+    featureDescription_1,
+    featureDescription_2,
+    featureDescription_3,
+  ].filter(Boolean);
+  
+  // Combine individual images into an array if an array is not provided
+  const combinedImages = images || [
+    image_1,
+    image_2,
+    image_3,
+    image_4,
+    image_5,
+    image_6,
+    image_7,
+    image_8,
+    image_9,
+    image_10,
+  ].filter(Boolean);
+
   return (
     <div className="flex flex-col gap-6 mb-5">
       <motion.div
@@ -90,7 +129,7 @@ function ProjectDetailsCard({
               type: "spring",
             }}
           >
-            <div className="flex flex-col gap-6  justify-center w-full h-full p-4">
+            <div className="flex flex-col gap-6 justify-center w-full h-full p-4">
               <h1 className="text-2xl font-bold text-white">Objective</h1>
               <p className="text-md font-light text-gray-300">{objective}</p>
             </div>
@@ -108,97 +147,40 @@ function ProjectDetailsCard({
           >
             <div className="flex flex-col gap-6 p-4">
               <h1 className="text-2xl text-white font-bold">Features</h1>
-              <div className="flex flex-col gap-2 p-2">
-                <h1 className="text-lg text-white font-bold">{featureTitle}</h1>
-                <li className="font-light list-disc text-gray-300">
-                  {featureDescription}
-                </li>
-              </div>
-              <div className="flex flex-col gap-2 p-2">
-                <h1 className="text-lg text-white font-bold">
-                  {featureTitle_1}
-                </h1>
-                <li className="font-light list-disc text-gray-300">
-                  {featureDescription_1}
-                </li>
-              </div>
-              <div className="flex flex-col gap-2 p-2">
-                <h1 className="text-lg text-white font-bold">
-                  {featureTitle_2}
-                </h1>
-                <li className="font-light list-disc text-gray-300">
-                  {featureDescription_2}
-                </li>
-              </div>
-              <div className="flex flex-col gap-2 p-2">
-                <h1 className="text-lg text-white font-bold">
-                  {featureTitle_3}
-                </h1>
-                <li className="font-light list-disc text-gray-300">
-                  {featureDescription_3}
-                </li>
-              </div>
+              {combinedFeatureTitles.map((title, index) => (
+                <div className="flex flex-col gap-2 p-2" key={index}>
+                  <h1 className="text-lg text-white font-bold">{title}</h1>
+                  <li className="font-light list-disc text-gray-300">
+                    {combinedFeatureDescriptions[index]}
+                  </li>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>
         <div className="flex flex-col gap-4 lg:gap-6 lg:w-[50%] w-full">
-          <motion.figure
-            className="relative h-full w-full "
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.8, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.5,
-              type: "spring",
-            }}
-          >
-            <Image
-              src={image_1}
-              alt="project-img"
-              height={600}
-              width={600}
-              className="w-full h-full object-cover rounded-3xl"
-            />
-          </motion.figure>
-          <motion.figure
-            className="relative h-full w-full"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.8, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.6,
-              type: "spring",
-            }}
-          >
-            <Image
-              src={image_2}
-              alt="project-img"
-              height={600}
-              width={600}
-              className="w-full h-full object-cover object-center rounded-3xl"
-            />
-          </motion.figure>
-          <motion.figure
-            className="relative h-full w-full"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.8, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.7,
-              type: "spring",
-            }}
-          >
-            <Image
-              src={image_3}
-              alt="project-img"
-              height={500}
-              width={500}
-              className="w-full h-full object-cover rounded-3xl"
-            />
-          </motion.figure>
+          {combinedImages.map((image, index) => (
+            <motion.figure
+              className="relative h-full w-full"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: [0, 0.8, 1], x: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeInOut",
+                delay: 0.5 + 0.1 * index,
+                type: "spring",
+              }}
+              key={index}
+            >
+              <Image
+                src={image}
+                alt={`project-img-${index + 1}`}
+                height={600}
+                width={600}
+                className="w-full h-full object-cover rounded-3xl"
+              />
+            </motion.figure>
+          ))}
         </div>
       </div>
       <motion.div
@@ -212,7 +194,7 @@ function ProjectDetailsCard({
           type: "spring",
         }}
       >
-        <div className="w-full h-full  flex flex-col gap-2 p-4 ">
+        <div className="w-full h-full flex flex-col gap-2 p-4 ">
           <h1 className="text-2xl text-white font-bold">Results</h1>
           <p className="font-light text-gray-300">{resultDescription}</p>
         </div>
@@ -221,4 +203,4 @@ function ProjectDetailsCard({
   )
 }
 
-export default ProjectDetailsCard
+export default ProjectDetailsCard;
