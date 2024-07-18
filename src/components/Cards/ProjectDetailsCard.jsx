@@ -145,7 +145,7 @@ function ProjectDetailsCard({
             }}
           >
             <div className="flex flex-col gap-6 p-4">
-              <h1 className="text-2xl text-white font-bold">Features</h1>
+              <h1 className="text-2xl text-white font-bold">Features & Details</h1>
               {combinedFeatureTitles.map((title, index) => (
                 <div className="flex flex-col gap-2 p-2" key={index}>
                   <h1 className="text-lg text-white font-bold">{title}</h1>
