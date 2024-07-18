@@ -8,7 +8,7 @@ function SyntaxAnalyzerPage() {
       <ProjectDetailsCard
         title={"Syntax Analyzer using Recursive Descent Method in Java"}
         websiteType={"Java Program"}
-        devPeriod={"3 Weeks"}
+        devPeriod={"1 day"}
         projectSummary={
           "This project involves writing a syntax analyzer using the recursive descent method in Java. It implements grammar rules to parse and analyze input strings based on two different grammars."
         }
