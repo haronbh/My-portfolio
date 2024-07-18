@@ -23,7 +23,6 @@ function ProjectDetailsCard({
   featureDescription_2,
   featureDescription_3,
   githubUrl,
-  demoUrl,
 }) {
   return (
     <div className="flex flex-col gap-6 mb-5">
@@ -56,14 +55,6 @@ function ProjectDetailsCard({
                 className="btn btn-sm w-1/2 lg:w-24 bg-green-700 text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
               >
                 Code <FaGithub className="text-md" />
-              </a>
-              <a
-                href={demoUrl}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="btn btn-sm w-1/2 lg:w-28 bg-green-700  text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
-              >
-                Demo <RiLinkUnlink className="text-md" />
               </a>
             </div>
           </div>
