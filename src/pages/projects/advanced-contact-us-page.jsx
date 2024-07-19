@@ -28,7 +28,7 @@ function ContactUsPageApp() {
         ]}
         image_1={"/images/contact1.PNG"}
         image_2={"/images/contact2.PNG"}
-        image_3={"/images/contact3.PNG"}
+        image_3={"/images/contact3.png"}
         image_4={"/images/contact4.PNG"}
         resultDescription={
           "The Contact Us Page App effectively provides users with a comprehensive contact interface through a well-structured Flutter application. It includes essential sections for terms of use, multiple contact methods, and a visual gallery, enhancing user experience and accessibility."
