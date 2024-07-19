@@ -7,7 +7,7 @@ function BookExchange() {
       <ProjectDetailsCard
         title={"BookExchange: A Responsive Web Application for Used Book Exchange"}
         websiteType={"Web Application"}
-        devPeriod={"4 Months"}
+        devPeriod={"3 days"}
         projectSummary={
           "BookExchange is a responsive web application designed to facilitate the exchange of used books among authenticated users. The project focuses on creating a multi-platform front-end using Bootstrap and NodeJS, aiming to provide a seamless user experience across various devices."
         }
