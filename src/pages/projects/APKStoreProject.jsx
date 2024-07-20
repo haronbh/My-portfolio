@@ -22,6 +22,26 @@ function APKStoreProject() {
 
   return (
     <div className="w-full min-h-screen">
+      <style jsx>{`
+        .github-button {
+          display: none;
+        }
+        .custom-visit-button {
+          display: inline-block;
+          padding: 12px 24px;
+          font-size: 16px;
+          color: #fff;
+          background-color: #28a745; /* Green color */
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          text-decoration: none;
+          margin-top: 20px;
+        }
+        .custom-visit-button:hover {
+          background-color: #218838; /* Darker green color for hover effect */
+        }
+      `}</style>
       <ProjectDetailsCard
         title={"APK Store WordPress Site"}
         websiteType={"WordPress Site"}
@@ -68,14 +88,12 @@ function APKStoreProject() {
         resultDescription={
           "The APK Store WordPress site effectively supports APK downloads with a robust, user-friendly design. The site excels in performance, SEO, and ease of content management, making it a powerful tool for APK distribution."
         }
-        githubUrl={null} // Setting to null to ensure the GitHub button is not displayed
+        githubUrl={"https://github.com/"} // Provide a dummy URL to render the GitHub button
       />
       <div style={{ textAlign: 'center', marginTop: '20px' }}>
         <a
           href="https://traidmod.com"
-          style={customButtonStyles}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = customButtonHoverStyles.backgroundColor}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = customButtonStyles.backgroundColor}
+          className="custom-visit-button"
           target="_blank"
           rel="noopener noreferrer"
         >
