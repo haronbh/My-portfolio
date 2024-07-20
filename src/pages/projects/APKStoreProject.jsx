@@ -68,18 +68,20 @@ function APKStoreProject() {
         resultDescription={
           "The APK Store WordPress site effectively supports APK downloads with a robust, user-friendly design. The site excels in performance, SEO, and ease of content management, making it a powerful tool for APK distribution."
         }
-        githubUrl={""} // Leave empty to hide GitHub button
+        githubUrl={null} // Setting to null to ensure the GitHub button is not displayed
       />
-      <a
-        href="https://traidmod.com"
-        style={customButtonStyles}
-        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = customButtonHoverStyles.backgroundColor}
-        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = customButtonStyles.backgroundColor}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Visit the Site
-      </a>
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <a
+          href="https://traidmod.com"
+          style={customButtonStyles}
+          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = customButtonHoverStyles.backgroundColor}
+          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = customButtonStyles.backgroundColor}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit the Site
+        </a>
+      </div>
     </div>
   );
 }
