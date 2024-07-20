@@ -20,28 +20,31 @@ function APKStoreProject() {
     backgroundColor: '#218838' // Darker green color for hover effect
   };
 
+  // CSS to hide the GitHub button and style the custom button
+  const customStyles = `
+    .github-button {
+      display: none;
+    }
+    .custom-visit-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #28a745; /* Green color */
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .custom-visit-button:hover {
+      background-color: #218838; /* Darker green color for hover effect */
+    }
+  `;
+
   return (
     <div className="w-full min-h-screen">
-      <style jsx>{`
-        .github-button {
-          display: none;
-        }
-        .custom-visit-button {
-          display: inline-block;
-          padding: 12px 24px;
-          font-size: 16px;
-          color: #fff;
-          background-color: #28a745; /* Green color */
-          border: none;
-          border-radius: 5px;
-          text-align: center;
-          text-decoration: none;
-          margin-top: 20px;
-        }
-        .custom-visit-button:hover {
-          background-color: #218838; /* Darker green color for hover effect */
-        }
-      `}</style>
+      <style>{customStyles}</style>
       <ProjectDetailsCard
         title={"APK Store WordPress Site"}
         websiteType={"WordPress Site"}
@@ -88,9 +91,9 @@ function APKStoreProject() {
         resultDescription={
           "The APK Store WordPress site effectively supports APK downloads with a robust, user-friendly design. The site excels in performance, SEO, and ease of content management, making it a powerful tool for APK distribution."
         }
-        githubUrl={"https://github.com/"} // Provide a dummy URL to render the GitHub button
+        githubUrl={""} // Provide an empty string to hide GitHub button
       />
-      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+      <div className="text-center">
         <a
           href="https://traidmod.com"
           className="custom-visit-button"
