@@ -91,8 +91,6 @@ function APKStoreProject() {
         resultDescription={
           "The APK Store WordPress site effectively supports APK downloads with a robust, user-friendly design. The site excels in performance, SEO, and ease of content management, making it a powerful tool for APK distribution."
         }
-        githubUrl={""} // Provide an empty string to hide GitHub button
-      />
       <div className="text-center">
         <a
           href="https://traidmod.com"
@@ -103,6 +101,8 @@ function APKStoreProject() {
           Visit the Site
         </a>
       </div>
+      />
+
     </div>
   );
 }
