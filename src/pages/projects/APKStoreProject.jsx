@@ -24,7 +24,7 @@ function APKStoreProject() {
     <div className="w-full min-h-screen">
       <ProjectDetailsCard
         title={"APK Store WordPress Site"}
-        websiteType={"WordPress Theme"}
+        websiteType={"WordPress Site"}
         devPeriod={"5 days"}
         projectSummary={
           "The APK Store is a WordPress site designed for downloading Android APKs, using the 5Play WordPress Theme. It focuses on fast loading, SEO, and easy APK management with automatic content generation and a responsive design."
