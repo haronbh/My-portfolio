@@ -52,7 +52,6 @@ function RasdPresseProject() {
         image_2={"/images/rasd2.PNG"}
         image_3={"/images/rasd3.PNG"}
         image_4={"/images/rasd4.PNG"}
-        image_5={"/images/rasd5.PNG"}
         image_6={"/images/rasd6.PNG"}
         image_7={"/images/rasd7.PNG"}
         resultDescription={
