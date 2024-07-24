@@ -1,5 +1,6 @@
+// ProjectDetailsCard.jsx
+
 import Image from "next/image";
-import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -32,6 +33,7 @@ function ProjectDetailsCard({
   featureDescription_3,
   featureDescriptions,
   githubUrl,
+  visitSiteUrl,  // New prop for visit site URL
 }) {
   // Combine individual feature titles and descriptions into arrays if arrays are not provided
   const combinedFeatureTitles = featureTitles || [
@@ -86,14 +88,25 @@ function ProjectDetailsCard({
               <p className="text-sm text-gray-200">{devPeriod}</p>
             </div>
             <div className="flex flex-row items-center justify-between lg:justify-end gap-2 mt-2">
-              <a
-                href={githubUrl}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="btn btn-sm w-1/2 lg:w-24 bg-green-700 text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
-              >
-                Code <FaGithub className="text-md" />
-              </a>
+              {visitSiteUrl ? (
+                <a
+                  href={visitSiteUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="btn btn-sm w-1/2 lg:w-24 bg-green-700 text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
+                >
+                  Visit Site
+                </a>
+              ) : (
+                <a
+                  href={githubUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="btn btn-sm w-1/2 lg:w-24 bg-green-700 text-gray-100 hover:bg-blue-600 hover:text-gray-100 self-end rounded-3xl"
+                >
+                  Code <FaGithub className="text-md" />
+                </a>
+              )}
             </div>
           </div>
         </div>
