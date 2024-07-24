@@ -2,24 +2,6 @@ import React from "react";
 import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard";
 
 function APKStoreProject() {
-  // Inline styles for custom button
-  const customButtonStyles = {
-    display: 'inline-block',
-    padding: '12px 24px',
-    fontSize: '16px',
-    color: '#fff',
-    backgroundColor: '#28a745', // Green color
-    border: 'none',
-    borderRadius: '5px',
-    textAlign: 'center',
-    textDecoration: 'none',
-    marginTop: '20px'
-  };
-
-  const customButtonHoverStyles = {
-    backgroundColor: '#218838' // Darker green color for hover effect
-  };
-
   // CSS to hide the GitHub button and style the custom button
   const customStyles = `
     .github-button {
@@ -91,18 +73,9 @@ function APKStoreProject() {
         resultDescription={
           "The APK Store WordPress site effectively supports APK downloads with a robust, user-friendly design. The site excels in performance, SEO, and ease of content management, making it a powerful tool for APK distribution."
         }
+        visitSiteUrl={"https://traidmod.com"} // Provide the visit site URL here
         githubUrl={""} // Provide an empty string to hide GitHub button
       />
-      <div className="text-center">
-        <a
-          href="https://traidmod.com"
-          className="custom-visit-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit the Site
-        </a>
-      </div>
     </div>
   );
 }
