@@ -1,8 +1,7 @@
-// ProjectDetailsCard.jsx
-
-import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { FaGithub } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 function ProjectDetailsCard({
   title,
@@ -35,7 +34,9 @@ function ProjectDetailsCard({
   githubUrl,
   visitSiteUrl,  // New prop for visit site URL
 }) {
-  // Combine individual feature titles and descriptions into arrays if arrays are not provided
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+
   const combinedFeatureTitles = featureTitles || [
     featureTitle,
     featureTitle_1,
@@ -50,7 +51,6 @@ function ProjectDetailsCard({
     featureDescription_3,
   ].filter(Boolean);
 
-  // Combine individual images into an array if an array is not provided
   const combinedImages = images || [
     image_1,
     image_2,
@@ -64,6 +64,16 @@ function ProjectDetailsCard({
     image_10,
   ].filter(Boolean);
 
+  function openModal(imageSrc) {
+    setModalImage(imageSrc);
+    setModalIsOpen(true);
+  }
+
+  function closeModal() {
+    setModalIsOpen(false);
+    setModalImage('');
+  }
+
   return (
     <div className="flex flex-col gap-6 mb-5">
       <motion.div
@@ -72,9 +82,9 @@ function ProjectDetailsCard({
         animate={{ opacity: [0, 0.8, 1], x: 0 }}
         transition={{
           duration: 0.5,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           delay: 0.22,
-          type: "spring",
+          type: 'spring',
         }}
       >
         <div className="flex lg:flex-row flex-col gap-2 h-full w-full justify-between p-2 lg:p-4">
@@ -111,6 +121,7 @@ function ProjectDetailsCard({
           </div>
         </div>
       </motion.div>
+
       {/* Summary Section */}
       <motion.div
         className="min-h-fit lg:h-64 bg-dark-200 rounded-3xl p-4 lg:p-6"
@@ -118,9 +129,9 @@ function ProjectDetailsCard({
         animate={{ opacity: [0, 0.8, 1], x: 0 }}
         transition={{
           duration: 0.7,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           delay: 0.3,
-          type: "spring",
+          type: 'spring',
         }}
       >
         <div className="flex flex-col gap-3 p-4 justify-center h-full w-full">
@@ -128,6 +139,7 @@ function ProjectDetailsCard({
           <p className="text-md font-light text-gray-300">{projectSummary}</p>
         </div>
       </motion.div>
+
       <div className="min-h-fit w-full flex lg:flex-row flex-col gap-6">
         <div className="flex flex-col gap-6 lg:w-[50%] w-full">
           <motion.div
@@ -136,9 +148,9 @@ function ProjectDetailsCard({
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
             transition={{
               duration: 0.7,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               delay: 0.4,
-              type: "spring",
+              type: 'spring',
             }}
           >
             <div className="flex flex-col gap-6 justify-center w-full h-full p-4">
@@ -146,15 +158,16 @@ function ProjectDetailsCard({
               <p className="text-md font-light text-gray-300">{objective}</p>
             </div>
           </motion.div>
+
           <motion.div
             className="w-full min-h-fit p-4 lg:p-6 bg-dark-200 rounded-3xl"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
             transition={{
               duration: 0.7,
-              ease: "easeInOut",
+              ease: 'easeInOut',
               delay: 0.4,
-              type: "spring",
+              type: 'spring',
             }}
           >
             <div className="flex flex-col gap-6 p-4">
@@ -170,6 +183,7 @@ function ProjectDetailsCard({
             </div>
           </motion.div>
         </div>
+
         <div className="flex flex-col gap-4 lg:gap-6 lg:w-[50%] w-full">
           {combinedImages.map((image, index) => (
             <motion.figure
@@ -179,9 +193,9 @@ function ProjectDetailsCard({
               animate={{ opacity: [0, 0.8, 1], x: 0 }}
               transition={{
                 duration: 0.8,
-                ease: "easeInOut",
+                ease: 'easeInOut',
                 delay: 0.5 + 0.1 * index,
-                type: "spring",
+                type: 'spring',
               }}
             >
               <Image
@@ -189,21 +203,23 @@ function ProjectDetailsCard({
                 alt={`project-img-${index + 1}`}
                 layout="fill"
                 objectFit="contain"
-                className="w-full h-full object-cover rounded-3xl"
+                className="w-full h-full object-cover rounded-3xl cursor-pointer"
+                onClick={() => openModal(image)}
               />
             </motion.figure>
           ))}
         </div>
       </div>
+
       <motion.div
         className="w-full min-h-fit p-4 lg:p-6 bg-dark-200 rounded-3xl shadow-sm"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: [0, 0.8, 1], x: 0 }}
         transition={{
           duration: 0.8,
-          ease: "easeInOut",
+          ease: 'easeInOut',
           delay: 0.8,
-          type: "spring",
+          type: 'spring',
         }}
       >
         <div className="w-full h-full flex flex-col gap-2 p-4 ">
@@ -211,6 +227,27 @@ function ProjectDetailsCard({
           <p className="font-light text-gray-300">{resultDescription}</p>
         </div>
       </motion.div>
+
+      {/* Modal for fullscreen image preview */}
+      {modalIsOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+          <div className="relative max-w-screen-lg max-h-screen p-4">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white text-3xl"
+            >
+              &times;
+            </button>
+            <Image
+              src={modalImage}
+              alt="Fullscreen preview"
+              layout="fill"
+              objectFit="contain"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
