@@ -201,8 +201,9 @@ function ProjectDetailsCard({
               <Image
                 src={image}
                 alt={`project-img-${index + 1}`}
-                layout="fill"
-                objectFit="contain"
+                layout="responsive"
+                width={800} // Or any other fixed width for the thumbnail
+                height={600} // Or any other fixed height for the thumbnail
                 className="w-full h-full object-cover rounded-3xl cursor-pointer"
                 onClick={() => openModal(image)}
               />
@@ -241,8 +242,9 @@ function ProjectDetailsCard({
             <Image
               src={modalImage}
               alt="Fullscreen preview"
-              layout="fill"
-              objectFit="contain"
+              layout="intrinsic"
+              width={1200} // Set to the actual width of the image
+              height={800} // Set to the actual height of the image
               className="rounded-lg"
             />
           </div>
