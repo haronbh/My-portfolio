@@ -54,32 +54,7 @@ function EducationPage() {
                 year={"2021 - 2024"}
               />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: [0, 0.8, 1], x: 0 }}
-              transition={{
-                duration: 0.6,
-                ease: "easeInOut",
-                delay: 0.5,
-                type: "spring",
-              }}
-            >
-              <EducationCard
-                title={"Technical Support Specialist"}
-                organization={"Center «Espace Informatique» (Internet Cafe)"}
-                description_1={
-                  "Provided comprehensive technical support services to clients at a cyber café."
-                }
-                description_2={
-                  "Diagnosed and resolved a wide range of software & some hardware issues on clients' devices, including troubleshooting operating system errors, application crashes, and connectivity problems."
-                }
-                description_3={
-                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel ...etc for client communication, administrative and more purposes."
-                }
-                year={"2018 - 2022"}
-              />
-            </motion.div>
-            <motion.div
+<motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: [0, 0.8, 1], x: 0 }}
               transition={{
@@ -107,6 +82,32 @@ function EducationPage() {
                 year={"2020 - Now"}
               />
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: [0, 0.8, 1], x: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut",
+                delay: 0.5,
+                type: "spring",
+              }}
+            >
+              <EducationCard
+                title={"Technical Support Specialist"}
+                organization={"Center «Espace Informatique» (Internet Cafe)"}
+                description_1={
+                  "Provided comprehensive technical support services to clients at a cyber café."
+                }
+                description_2={
+                  "Diagnosed and resolved a wide range of software & some hardware issues on clients' devices, including troubleshooting operating system errors, application crashes, and connectivity problems."
+                }
+                description_3={
+                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel ...etc for client communication, administrative and more purposes."
+                }
+                year={"2018 - 2022"}
+              />
+            </motion.div>
+            
           </div>
           <div className="flex flex-col gap-6 min-h-fit lg:w-[40%] w-full">
             <motion.div
