@@ -68,7 +68,7 @@ function EducationPage() {
                 title={"Freelance Web Developer & Webmaster"}
                 organization={"Freelance/Remote"}
                 description_1={
-                  "As a webmaster, I managed and developed multiple WordPress sites, ensuring they were optimized for performance and user experience. Utilizing the best themes and plugins, I tailored each site to meet specific needs. My responsibilities included regular updates, troubleshooting issues, content creation & updates and content writers team leading. I also handled data migration."
+                  "As a webmaster, I managed and developed multiple sites (specially with wordpress), ensuring they were optimized for performance and user experience. Utilizing the best themes and plugins, I tailored each site to meet specific needs. My responsibilities included regular updates, troubleshooting issues, content creation & updates and content writers team leading. I also handled data migration."
                 }
                 description_2={
                   "I administered servers using Unix, Linux, cPanel, and Plesk, maintaining a secure and stable hosting environment. This involved routine backups, security audits, and performance optimization. I ensured that all websites had minimal downtime and were protected against potential security threats. My server management skills included configuring server settings, managing databases, and troubleshooting any server-related issues that arose."
@@ -77,7 +77,7 @@ function EducationPage() {
                   "I implemented strategic SEO practices to drive organic traffic to tech-related websites. This included conducting keyword research, optimizing content, and building backlinks to improve search engine rankings. I monitored website analytics to track performance and adjust strategies as needed. My SEO efforts significantly increased website visibility and user engagement, leading to higher traffic and improved site metrics."
                 }
                 description_4={
-                  "I provided web development and SEO services to clients. This involved customizing solutions to meet their specific needs and delivering comprehensive technical support. I communicated with clients to understand their requirements and offered consulting to enhance their online presence."
+                  "I provided web development, SEO and technical services to clients. This involved customizing solutions to meet their specific needs and delivering comprehensive technical support. I communicated with clients to understand their requirements and offered consulting to enhance their online presence."
                 }
                 year={"2020 - Now"}
               />
