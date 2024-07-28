@@ -301,17 +301,15 @@ function Home() {
           </div>
           <div className="flex flex-col lg:flex-row w-full min-h-fit gap-5">
             <Link
-              href={"/projects/unify"}
+              href={"/projects/gym-management"}
               rel="noopener noreferrer"
               target="_blank"
             >
               <ProjectCard
                 title={"Unify"}
-                imageUrl={"/images/unify.png"}
-                websiteType={"Community Sharing"}
-                tech_1={"Next.js"}
-                tech_2={"TailwindCSS"}
-                tech_3={"Firebase"}
+                imageUrl={"/images/gym.png"}
+                websiteType={"For client & admin"}
+                tech_1={"Flutter"}
               />
             </Link>
             <Link
