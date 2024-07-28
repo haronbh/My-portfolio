@@ -102,7 +102,7 @@ function EducationPage() {
                   "Diagnosed and resolved a wide range of software & some hardware issues on clients' devices, including troubleshooting operating system errors, application crashes, and connectivity problems."
                 }
                 description_3={
-                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel ...etc for client communication, administrative and more purposes."
+                  "Developed and maintained office documents in various formats such as PDF, Word, and Excel ..."
                 }
                 year={"2018 - 2022"}
               />
