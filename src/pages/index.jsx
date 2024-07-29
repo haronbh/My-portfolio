@@ -306,38 +306,36 @@ function Home() {
               target="_blank"
             >
               <ProjectCard
-                title={"Unify"}
+                title={"Full Gym Management System"}
                 imageUrl={"/images/gym.png"}
                 websiteType={"For client & admin"}
                 tech_1={"Flutter"}
               />
             </Link>
             <Link
-              href={"/projects/reelio"}
+              href={"/projects/RasdPresseProject"}
               rel="noopener noreferrer"
               target="_blank"
             >
               <ProjectCard
-                title={"Reelio"}
-                imageUrl={"/images/reelio-1.png"}
-                websiteType={"Movie Platform"}
-                tech_1={"Next.js"}
-                tech_2={"TailwindCSS"}
-                tech_3={"IMdb.API"}
+                title={"News site project"}
+                imageUrl={"/images/rasd1.PNG"}
+                websiteType={"News Platform"}
+                tech_1={"Wordpress"}
               />
             </Link>
             <Link
-              href={"/projects/neon"}
+              href={"/projects/Cinema-Management-System-with-java"}
               rel="noopener noreferrer"
               target="_blank"
             >
               <ProjectCard
-                title={"Neon City"}
-                imageUrl={"/images/neoncity.png"}
-                websiteType={"Mini Game"}
-                tech_1={"HTML"}
-                tech_2={"CSS"}
-                tech_3={"Vanilla JS"}
+                title={"Cinema Management"}
+                imageUrl={"/images/c8.PNG"}
+                websiteType={"MiniProject with database"}
+                tech_1={"JAVA"}
+                tech_2={"SQL"}
+                tech_3={"GUI"}
               />
             </Link>
           </div>
