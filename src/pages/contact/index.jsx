@@ -75,7 +75,7 @@ function ContactPage() {
             >
               <SocialsCard
                 Icon={<FaGithub />}
-                Url={"https://github.com/farouk26"}
+                Url={"https://github.com/haronbh"}
                 socialName={"Github"}
               />
             </motion.div>
