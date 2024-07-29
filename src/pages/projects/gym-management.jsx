@@ -7,7 +7,7 @@ function GymManagement() {
       The Gym Management Application is a comprehensive solution designed to streamline the operations of a gym. It provides functionalities for both users and administrators, including user authentication, exercise tracking, nutrition guidance, problem reporting, and product sales.
       <div className="mt-4">
         <a
-          href="https://www.mediafire.com/file/0rbm2zfbtiox8ba/gym_projet.zip/file"
+          href="https://drive.google.com/file/d/1dTtoffYL1dOwqvZatjt3kpnGj6WONg9V/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-sm bg-blue-500 text-white hover:bg-blue-700 rounded-md"
