@@ -2,15 +2,29 @@ import ProjectDetailsCard from "@/components/Cards/ProjectDetailsCard";
 import React from "react";
 
 function GymManagement() {
+  const projectSummary = (
+    <>
+      The Gym Management Application is a comprehensive solution designed to streamline the operations of a gym. It provides functionalities for both users and administrators, including user authentication, exercise tracking, nutrition guidance, problem reporting, and product sales.
+      <div className="mt-4">
+        <a
+          href="https://www.mediafire.com/file/0rbm2zfbtiox8ba/gym_projet.zip/file"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-sm bg-blue-500 text-white hover:bg-blue-700 rounded-md"
+        >
+          Read Full App Report
+        </a>
+      </div>
+    </>
+  );
+
   return (
     <div className="w-full min-h-screen">
       <ProjectDetailsCard
         title={"Gym Management Application"}
         websiteType={"Mobile Application"}
         devPeriod={"4 months"}
-        projectSummary={
-          "The Gym Management Application is a comprehensive solution designed to streamline the operations of a gym. It provides functionalities for both users and administrators, including user authentication, exercise tracking, nutrition guidance, problem reporting, and product sales."
-        }
+        projectSummary={projectSummary}
         objective={
           "The objective of this project is to create a mobile application that enhances the user experience and improves the efficiency of gym management. It focuses on user-friendly interfaces, real-time updates, and robust data management."
         }
