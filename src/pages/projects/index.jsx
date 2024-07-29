@@ -135,18 +135,146 @@ function ProjectsPage() {
             }}
           >
             <Link
-              href={"/projects/automata-method"}
+              href={"/projects/ElectricksOnlineShopSystemProject"}
               rel="noopener noreferrer"
               target="_blank"
             >
               <ProjectCard
-                title={"Automaton method compilation"}
-                imageUrl={"/images/automaton.PNG"}
-                websiteType={"Java code"}
-                tech_1={"JAVA"}
+                title={"Online Shop System"}
+                imageUrl={"/images/k1.PNG"}
+                  websiteType={"Website"}
+                tech_1={"PHP"}
+                tech_2={"SQL"}
+                tech_3={"BOOTSTRAP"}
+              />
+            </Link>
+          </motion.div>   
+
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/RasdPresseProject"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Online News Site"}
+                imageUrl={"/images/rasd1.PNG"}
+                  websiteType={"Website"}
+                tech_1={"Wordpress"}
+              />
+            </Link>
+          </motion.div> 
+
+           <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/BMI-and-calorie-and-protein-Calculator"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"BMI calculater & Body Needs"}
+                imageUrl={"/images/snip3.PNG"}
+                  websiteType={"Mobile App"}
+                tech_1={"Flutter"}
+              />
+            </Link>
+          </motion.div> 
+
+           <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/BMI-and-calorie-and-protein-Calculator"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Online News Site"}
+                imageUrl={"/images/snip3.PNG"}
+                  websiteType={"Mobile App"}
+                tech_1={"Flutter"}
+              />
+            </Link>
+          </motion.div> 
+
+          
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/Book-Exchange-Web-Application-UI"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Responsive Design for Book Exchange"}
+                imageUrl={"/images/b2.PNG"}
+                websiteType={"Website"}
+                tech_1={"Cordova"}
+                tech_1={"Bootstrap"}
+                tech_1={"LocalStorage"}
               />
             </Link>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/Device-Information-App-With-Cordova"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Device Information with Cordova"}
+                imageUrl={"/images/device-info.png"}
+                websiteType={"Website"}
+                tech_1={"Cordova"}
+                tech_1={"JS"}
+              />
+            </Link>
+          </motion.div>
+
+          
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: [0, 0.7, 1], x: 0 }}
