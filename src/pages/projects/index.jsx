@@ -40,6 +40,101 @@ function ProjectsPage() {
             }}
           >
             <Link
+              href={"/projects/gym-management"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Mobile Gym Management App"}
+                imageUrl={"/images/gym.png"}
+                  websiteType={"Mobile App"}
+                tech_1={"Flutter"}
+                tech_2={"SqFLite"}
+              />
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/APKStoreProject"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Download Monbile Apps"}
+                imageUrl={"/images/s1.PNG"}
+                  websiteType={"Website"}
+                tech_1={"SMMpanel"}
+              />
+            </Link>
+          </motion.div>    
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/Cinema-Management-System-with-java"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Manage Cinema Software"}
+                imageUrl={"/images/c8.PNG"}
+                  websiteType={"Windows Software"}
+                tech_1={"JAVA"}
+                tech_2={"GUI"}
+                tech_3={"SQL"}
+              />
+            </Link>
+          </motion.div>   
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/SMMTargetProject"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Sell Social Media Followers"}
+                imageUrl={"/images/smm4.PNG"}
+                  websiteType={"Website"}
+                tech_1={"Wordpress"}
+              />
+            </Link>
+          </motion.div>   
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
               href={"/projects/automata-method"}
               rel="noopener noreferrer"
               target="_blank"
