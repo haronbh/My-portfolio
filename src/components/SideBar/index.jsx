@@ -80,7 +80,7 @@ function SideBar() {
               activeLink === "Stack" ? "text-green-400" : "text-white"
             }`}
           >
-            Stack
+            SKILLS
           </Link>
           <Link
             href={"/contact"}
