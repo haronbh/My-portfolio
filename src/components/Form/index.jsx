@@ -17,7 +17,7 @@ function ContactForm() {
           <h1 className="font-bold text-gray-200 text-3xl">Ready for Work and Freelancing Tasks</h1>
           <p className="text-md lg:text-lg text-center text-gray-200">
             I am available for work and freelancing tasks. You can contact me via email at
-            <a href="mailto:your-email@example.com" className="text-blue-500"> your-email@example.com</a>.
+            <a href="mailto:haroun19871987@gmail.com" className="text-blue-500"> haroun19871987@gmail.com</a>.
           </p>
           <div className="flex flex-col gap-4 md:flex-row md:gap-2">
             <motion.a
@@ -29,7 +29,7 @@ function ContactForm() {
                 delay: 0.4,
                 type: "spring",
               }}
-              href="mailto:your-email@example.com"
+              href="mailto:haroun19871987@gmail.com"
               className="btn bg-green-700 text-white hover:bg-blue-600 hover:text-white rounded-2xl"
             >
               Send Email
