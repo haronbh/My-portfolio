@@ -172,31 +172,7 @@ function ProjectsPage() {
                 tech_1={"Wordpress"}
               />
             </Link>
-          </motion.div> 
-
-           <motion.div
-            initial={{ opacity: 0, x: 70 }}
-            animate={{ opacity: [0, 0.8, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.3,
-              type: "spring",
-            }}
-          >
-            <Link
-              href={"/projects/BMI-and-calorie-and-protein-Calculator"}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ProjectCard
-                title={"BMI calculater & Body Needs"}
-                imageUrl={"/images/snip3.PNG"}
-                  websiteType={"Mobile App"}
-                tech_1={"Flutter"}
-              />
-            </Link>
-          </motion.div> 
+          </motion.div>  
 
            <motion.div
             initial={{ opacity: 0, x: 70 }}
@@ -274,107 +250,6 @@ function ProjectsPage() {
             </Link>
           </motion.div>
 
-          
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.7, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.4,
-              type: "spring",
-            }}
-          >
-            <Link
-              href={"/projects/reelio"}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ProjectCard
-                title={"Reelio"}
-                imageUrl={"/images/reelio-1.png"}
-                websiteType={"Movie Platform"}
-                tech_1={"Next.js"}
-                tech_2={"TailwindCSS"}
-                tech_3={"IMdb.API"}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.7, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.4,
-              type: "spring",
-            }}
-          >
-            <Link
-              href={"/projects/reelio"}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ProjectCard
-                title={"Reelio"}
-                imageUrl={"/images/reelio-1.png"}
-                websiteType={"Movie Platform"}
-                tech_1={"Next.js"}
-                tech_2={"TailwindCSS"}
-                tech_3={"IMdb.API"}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.7, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.5,
-              type: "spring",
-            }}
-          >
-            <Link
-              href={"/projects/neon"}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ProjectCard
-                title={"Neon City"}
-                imageUrl={"/images/neoncity.png"}
-                websiteType={"Mini Game"}
-                tech_1={"HTML"}
-                tech_2={"CSS"}
-                tech_3={"Vanilla JS"}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: [0, 0.7, 1], x: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-              delay: 0.6,
-              type: "spring",
-            }}
-          >
-            <Link
-              href={"/projects/alibabalite"}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ProjectCard
-                title={"Alibaba Lite"}
-                imageUrl={"/images/alibabalite.png"}
-                websiteType={"E-Commerce Website"}
-                tech_1={"Next.js"}
-                tech_2={"TailwindCSS"}
-                tech_3={"Firebase"}
-              />
-            </Link>
-          </motion.div>
         </div>
       </div>
     </section>
