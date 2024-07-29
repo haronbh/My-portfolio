@@ -394,7 +394,7 @@ function ProjectsPage() {
                 imageUrl={"/images/automaton.PNG"}
                 websiteType={"Script"}
                 tech_1={"Java"}
-                tech_1={"automaton"}                
+                tech_2={"automaton"}                
               />
             </Link>
           </motion.div>
@@ -419,7 +419,7 @@ function ProjectsPage() {
                 imageUrl={"/images/assembly.png"}
                 websiteType={"Script"}
                 tech_1={"Mips"}
-                tech_1={"automaton"}                
+                tech_2={"automaton"}                
               />
             </Link>
           </motion.div>
