@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { FaGithub } from "react-icons/fa"
-import { RiLinkUnlink } from "react-icons/ri"
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { RiLinkUnlink } from "react-icons/ri";
 
 function ProjectCard({
   title,
@@ -18,12 +18,13 @@ function ProjectCard({
         <Image
           src={imageUrl}
           alt={title}
-          width={200}
-          height={200}
+          width={400} // fixed width
+          height={300} // fixed height
           placeholder="blur"
           blurDataURL="public/images/blur.jpg"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="group-hover:scale-110 saturate-100 group-hover:blur-[2px] hover:saturate-50 brightness-[0.73] object-cover object-center w-full h-full duration-500"
+          style={{ objectFit: 'cover' }} // Ensures the image covers the area
         />
       </figure>
       <div className="absolute bottom-[5%] flex flex-col px-3 w-full gap-1">
@@ -51,7 +52,7 @@ function ProjectCard({
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
