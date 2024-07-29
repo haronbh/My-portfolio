@@ -368,8 +368,82 @@ function ProjectsPage() {
               <ProjectCard
                 title={"Contact Us Page App"}
                 imageUrl={"/images/contact1.PNG"}
-                websiteType={"mOBILE APP"}
+                websiteType={"MOBILE APP"}
                 tech_1={"FLUTTER"}
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/automata-method"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Character String Recognizer"}
+                imageUrl={"/images/automaton.PNG"}
+                websiteType={"Script"}
+                tech_1={"Java"}
+                tech_1={"automaton"}                
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/finite-state-automaton-with-java"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Assembly Language Projects"}
+                imageUrl={"/images/assembly.png"}
+                websiteType={"Script"}
+                tech_1={"Mips"}
+                tech_1={"automaton"}                
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/palindrome"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Palindrome Checker"}
+                imageUrl={"/images/palindrome.jpg"}
+                websiteType={"Script"}
+                tech_1={"c++"}
               />
             </Link>
           </motion.div>
