@@ -243,8 +243,8 @@ function ProjectsPage() {
                 imageUrl={"/images/b2.PNG"}
                 websiteType={"Website"}
                 tech_1={"Cordova"}
-                tech_1={"Bootstrap"}
-                tech_1={"LocalStorage"}
+                tech_2={"Bootstrap"}
+                tech_3={"LocalStorage"}
               />
             </Link>
           </motion.div>
@@ -269,7 +269,7 @@ function ProjectsPage() {
                 imageUrl={"/images/device-info.png"}
                 websiteType={"Website"}
                 tech_1={"Cordova"}
-                tech_1={"JS"}
+                tech_2={"JS"}
               />
             </Link>
           </motion.div>
