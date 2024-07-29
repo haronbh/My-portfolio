@@ -91,7 +91,7 @@ function ContactPage() {
             >
               <SocialsCard
                 Icon={<CiLinkedin />}
-                Url={"https://www.linkedin.com/in/faroukisme/"}
+                Url={"https://linkedin.com/in/haronbh"}
                 socialName={"LinkedIn"}
               />
             </motion.div>
@@ -107,8 +107,8 @@ function ContactPage() {
             >
               <SocialsCard
                 Icon={<IoCallOutline />}
-                socialName={"+213782062515"}
-                Url={"tel:+213782062515"}
+                socialName={"+213541212293"}
+                Url={"tel:+213541212293"}
               />
             </motion.div>
           </motion.div>
