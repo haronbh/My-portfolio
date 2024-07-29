@@ -8,7 +8,7 @@ export default function Document() {
       style={{ scrollBehavior: "smooth" }}
     >
       <Head />
-      <title>Farouk Zemmouri | Portfolio</title>
+      <title>Haroun Bouhroude | Portfolio</title>
       <body>
         <Main />
         <NextScript />
