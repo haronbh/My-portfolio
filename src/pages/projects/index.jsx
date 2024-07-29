@@ -250,6 +250,130 @@ function ProjectsPage() {
             </Link>
           </motion.div>
 
+             <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/Lexical-analyzer-with-java"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Lexical Analyzer in Java"}
+                imageUrl={"/images/analyser.png"}
+                websiteType={"Script"}
+                tech_1={"JAVA"}
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/SyntaxAnalyzerPage"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Syntax Analyzer using Recursive Descent"}
+                imageUrl={"/images/recursive-descent.png"}
+                websiteType={"Script"}
+                tech_1={"JAVA"}
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/Web-Application-for-Used-Book-Exchange-with-NodeJS-ExpressJS-and-Sequelize"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Web Application for Used Book"}
+                imageUrl={"/images/b5.PNG"}
+                websiteType={"Website"}
+                tech_1={"Node.JS"}
+                tech_2={"SQLite"}
+                 tech_3={"Bootstrap"}
+            
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/XML-Parsing-In-Python"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"XML Management with Python"}
+                imageUrl={"/images/XML-Parsing-In-Python.png"}
+                websiteType={"Scripts"}
+                tech_1={"XML"}
+                tech_2={"PYTHON"}            
+              />
+            </Link>
+          </motion.div>
+
+              <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/advanced-contact-us-page"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Contact Us Page App"}
+                imageUrl={"/images/contact1.PNG"}
+                websiteType={"mOBILE APP"}
+                tech_1={"FLUTTER"}
+              />
+            </Link>
+          </motion.div>
+          
         </div>
       </div>
     </section>
