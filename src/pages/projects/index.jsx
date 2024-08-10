@@ -399,6 +399,33 @@ function ProjectsPage() {
             </Link>
           </motion.div>
 
+            <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            animate={{ opacity: [0, 0.8, 1], x: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeInOut",
+              delay: 0.3,
+              type: "spring",
+            }}
+          >
+            <Link
+              href={"/projects/finite-state-automaton-with-java"}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <ProjectCard
+                title={"Finite State Automaton Identifier"}
+                imageUrl={"/images/automata.png"}
+                websiteType={"Script"}
+                tech_1={"JAVA"}
+                tech_2={"Automaton"}                
+              />
+            </Link>
+          </motion.div>
+
+          
+          
               <motion.div
             initial={{ opacity: 0, x: 70 }}
             animate={{ opacity: [0, 0.8, 1], x: 0 }}
