@@ -410,7 +410,7 @@ function ProjectsPage() {
             }}
           >
             <Link
-              href={"/projects/finite-state-automaton-with-java"}
+              href={"/projects/mips-assembly-language"}
               rel="noopener noreferrer"
               target="_blank"
             >
