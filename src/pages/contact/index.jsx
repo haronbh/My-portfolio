@@ -107,8 +107,8 @@ function ContactPage() {
             >
               <SocialsCard
                 Icon={<IoCallOutline />}
-                socialName={"+213541212293"}
-                Url={"tel:+213541212293"}
+                socialName={"+1 (438) 458-0136"}
+                Url={"tel:+1 (438) 458-0136"}
               />
             </motion.div>
           </motion.div>
